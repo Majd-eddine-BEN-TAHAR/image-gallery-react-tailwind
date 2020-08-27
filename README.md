@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## For live preview visit : [image-gallery-react-tailwind](https://majd-eddine-ben-tahar.github.io/image-gallery-react-tailwind/)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [tailwindCss](https://tailwindcss.com/).
 
 ## Available Scripts
 
