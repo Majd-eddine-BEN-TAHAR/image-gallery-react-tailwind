@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  @apply font-nunito;
+}
+
+.top-50 {
+  top: 50%;
+  transform: translateY(-5%);
+}
+.bottom-1 {
+  bottom: 10%;
+}
+.horizontal {
+}
+
+.vertical {
+}
+
+.big {
+}
+
+.grid-auto-rows {
+  grid-auto-rows: 25rem;
+}
+
+.grid-auto-flow {
+}
+
+.loader {
+  border-color: #ccdae4;
+  border-top-color: #3498db;
+  -webkit-animation: spinner 800ms linear infinite;
+  animation: spinner 800ms linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 640px) {
+  .grid-auto-flow {
+    grid-auto-flow: dense;
+  }
+  .horizontal {
+    grid-column: span 2;
+  }
+
+  .vertical {
+    grid-row: span 2;
+  }
+
+  .big {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
