@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [tailwindCss](https://tailwindcss.com/).
 
+### 1 - to install all dependencies run : `npm i`
+
+### 2 - before you start run  `npm run build:css` : to genrate css styles
+
 ## Available Scripts
 
 In the project directory, you can run:
