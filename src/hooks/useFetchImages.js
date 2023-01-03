@@ -40,7 +40,6 @@ const useFetchImages = (term, category) => {
     // send request after 300ms to not spam your server
     const cancelRequestTimer = setTimeout(() => {
       dispatch({ type: ACTIONS.MAKE_REQUEST });
-      const CORS_URL = "https://majd-cors-anywhere.herokuapp.com/";
       const URL =
         "https://pixabay.com/api/?key=" +
         process.env.REACT_APP_PIXABAY_KEY +
@@ -48,7 +47,7 @@ const useFetchImages = (term, category) => {
         encodeURIComponent(term) +
         `&category=${category}`;
 
-      fetch(`${CORS_URL + URL}`)
+      fetch(`${URL}`)
         .then((res) => res.json())
         .then((res) => {
           dispatch({
